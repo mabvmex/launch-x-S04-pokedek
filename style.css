@@ -116,13 +116,13 @@
 
 .marco-pantalla {
   /* display: inline-block; */
-position: absolute;
-background-color:#fff;
-margin: 20px;
-width: 310px;
-height: 310px;
-border-radius: 0 0 0 50px;
-border: #000 solid 4px;
+  position: absolute;
+  background-color: #fff;
+  margin: 20px;
+  width: 310px;
+  height: 310px;
+  border-radius: 0 0 0 50px;
+  border: #000 solid 4px;
 }
 
 .circulitos {
@@ -174,10 +174,117 @@ border: #000 solid 4px;
 }
 
 .opciones {
- font-size: 30px; 
- margin-left: 180px;
- margin-top: 3px;
+  font-size: 30px;
+  margin-left: 180px;
+  margin-top: 3px;
 }
+
+.leds {
+  display: inline-flex;
+  margin-top: 350px;
+  margin-left: 80px;
+}
+
+.led-rojo {
+  width: 50px;
+  height: 4px;
+  margin-left: 30px;
+  border-radius: 70px;
+  background-color: #ff0100;
+  border: #000 solid 3px;
+  /* -webkit-box-shadow: 3px 2px 5px #000; */
+}
+
+.led-azul {
+  width: 50px;
+  height: 4px;
+  margin-left: 30px;
+  border-radius: 70px;
+  background-color: #85bdfe;
+  border: #000 solid 3px;
+  /* -webkit-box-shadow: 3px 2px 5px #000; */
+}
+
+.joystick {
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 70px;
+  background-color: #585858;
+  border: #000 solid 3px;
+  -webkit-box-shadow: 3px 2px 5px #000;
+}
+
+/* =============== */
+/* ==== D-PAD ==== */
+
+.dpad {
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  margin-left: 220px;
+  margin-top: -50px;
+  /* filter: drop-shadow(7px 5px 5px #777); */
+}
+
+.arriba, .derecha, .abajo, .izquierda, .centro {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #222;
+  padding: 5px;
+}
+
+.flecha-arriba, .flecha-derecha, .flecha-abajo, .flecha-izquierda {
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  background-color: #1b2022;
+}
+
+.centro {
+  margin-top: 40px;
+  margin-left: 40px;
+  background-color: #000;
+
+}
+
+.circulo-central {
+  border-radius: 100%;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  background-color: #777;
+}
+
+.arriba {
+  top: 13px;
+  left: -27px; 
+  background-color: #3298cb;
+}
+
+.derecha {
+  top: 39px;
+  left: -55px;
+  border: 1px solid #222;
+  background-color: #fecb65;
+}
+
+.abajo {
+  top: 66px;
+  left: -54px;
+  background-color: #32cb72; 
+}
+
+.izquierda {
+  top: 39px;
+  left: -134px;
+  background-color:darkorchid;
+}
+
+/* =========================== */
+/* ====  Footer y Botones ==== */
 
 /* ======================= */
 /* ==== Panel Derecho ==== */
