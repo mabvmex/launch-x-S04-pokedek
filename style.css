@@ -15,12 +15,13 @@
   padding: 20px;
   border: #000 solid 4px;
   border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px #000;
 }
 
 /* ======================= */
 /* ==== Zona de Focos ==== */
 
-.foquitos {
+.foquitos, .leds-derecha {
   display: inline-flex;
 }
 
@@ -58,6 +59,8 @@
   width: 288px;
   display: inline-flex;
   border-bottom: #000 solid 3px;
+  -webkit-box-shadow: 2px 5px 6px -4px #000;
+  
 }
 
 .foquitos-pequeños-rojo {
@@ -99,6 +102,9 @@
   margin-top: 10px;
   width: 89px;
   border-bottom: #000 solid 3px;
+  -webkit-box-shadow: 0px 2px 1px #000;
+  
+
 }
 
 .linea-diagonal {
@@ -109,6 +115,7 @@
   width: 45px;
   transform: rotate(120deg);
   transform-origin: 0% 0%;
+  -webkit-box-shadow: 1px -2px 3px #000;
 }
 
 /* ========================== */
@@ -192,7 +199,6 @@
   border-radius: 70px;
   background-color: #ff0100;
   border: #000 solid 3px;
-  /* -webkit-box-shadow: 3px 2px 5px #000; */
 }
 
 .led-azul {
@@ -202,7 +208,6 @@
   border-radius: 70px;
   background-color: #85bdfe;
   border: #000 solid 3px;
-  /* -webkit-box-shadow: 3px 2px 5px #000; */
 }
 
 .joystick {
@@ -238,7 +243,6 @@
   height: 15px;
   border: 1px solid #222;
   padding: 5px;
-  /* background-color: #585858; */
   background-color: #000;
 }
 
@@ -339,6 +343,8 @@
   background-color: #98cb98;
 }
 
+
+
 .led-inferior {
   margin-top: 20px;
   margin-left: 25px;
@@ -373,10 +379,131 @@
 
 .pokedex-right {
   background-color: #fe0065;
-  margin-right: 20px;
-  height: 630px;
+  margin-top: 67px;
+  margin-left: -19px;
+  height: 562px;
   width: 350px;
   padding: 20px;
   border: #000 solid 4px;
-  border-radius: 20px;
+  border-radius: 0px 0px 20px 20px;
+  -webkit-box-shadow: 10px 10px 5px #000;
+}
+
+.corte-tapa {
+background-color: #fff;
+width: 109px;
+height: 0px;
+margin-top: -24px;
+margin-left: 245px;
+border-top: 40px solid transparent;
+border-right: 20px solid transparent;
+border-bottom: 0px solid transparent;
+border-left: 20px solid #fe0065;
+}
+
+.linea-diagonal-derecha{
+  position: absolute;
+  width: 45px;
+  border-top: 4px solid #000;
+  margin-top: -22px;
+  margin-left: 245px;
+  transform: rotate(60deg);
+  transform-origin: 0% 0%;
+}
+
+.linea-derecha {
+  margin-left: 265px;
+  margin-top: -2px;
+  width: 107px;
+  border-bottom: #000 solid 4px;
+  -webkit-box-shadow: 0px 2px 1px #000;
+
+}
+
+
+/* ============================= */
+/* ==== Pantalla Secundaria ==== */
+.pantalla-secundaria {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    border: #000 solid 2px;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+/* ========================= */
+/* ==== Grid de botones ==== */
+.grid-container {
+  display: grid;
+  width: 250px;
+  margin-top: 10px;
+  margin-left:50px;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 1px;
+  row-gap: 1px;
+}
+
+.grid-item {
+  background-color: #7ca9f7;
+  border: 1px solid #000;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 1px #000;  
+  /* -webkit-box-shadow: -2px -2px 3px -1px inset #000; */
+}
+
+.btn-sec-derecha {
+  display: inline-flex;
+  margin-left: 90px;
+  margin-top: 15px;
+}
+
+.btn-sec-derecha-uno, .btn-sec-derecha-dos {
+  width: 50px;
+  height: 4px;
+  margin-left: 10px;
+  border: #000 solid 1px;
+  background-color: #585858;
+  -webkit-box-shadow: 2px 2px 1px #000;  
+}
+
+.leds-footer-derecha, .footer-derecha-botones {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+
+ .btn-uno, .btn-dos{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  border: #000 2px solid;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 1px #000;  
+}
+
+.led-amarillo-derecha {
+  margin-left: 150px;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  background-color: #fecb65;
+  border: 3px  #000 solid;
+}
+
+
+.brillo-cuatro {
+  margin-top: 4px;
+  margin-left: 5px;
+  border-radius: 100%;
+  height: 6px;
+  width: 6px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
