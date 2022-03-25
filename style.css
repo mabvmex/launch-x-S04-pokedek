@@ -1,3 +1,10 @@
+body {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aab98880-40d5-408c-8dde-073e8abebcdb/d5yluu4-4820e9e3-7fa6-43f0-b780-770891b91fd0.png/v1/fill/w_1024,h_576,q_75,strp/pikachu_w__logo_wallpaper_by_simplewallpapers-d5yluu4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9hYWI5ODg4MC00MGQ1LTQwOGMtOGRkZS0wNzNlOGFiZWJjZGIvZDV5bHV1NC00ODIwZTllMy03ZmE2LTQzZjAtYjc4MC03NzA4OTFiOTFmZDAucG5nIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTU3NiJ9XV19.Swg1xak7phI3d5J35jGT0024634vF335YDxEs0d0Ra8');
+  /* background-image: url('../img/pokemon-background-1-mini.jpeg'); */
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
 .container {
   display: flex;
   margin-top: 100px;
@@ -154,6 +161,13 @@
   border: #000 solid 2px;
   border-radius: 10px;
   background-color: #98cb98;
+}
+
+.pokemonImagen {
+width: 200px;
+height:200px;
+margin-top: 10px;
+margin-left: 20px;
 }
 
 .fondo-pantalla {
@@ -336,6 +350,7 @@
 .pantalla-input {
   width: 150px;
   height: 45px;
+  text-align: center;
   margin-left: 40px;
   margin-top: -10px !important;
   border: #000 solid 2px;
@@ -391,9 +406,9 @@
 
 .corte-tapa {
 background-color: #fff;
-width: 109px;
+width: 105px;
 height: 0px;
-margin-top: -24px;
+margin-top: -25px;
 margin-left: 245px;
 border-top: 40px solid transparent;
 border-right: 20px solid transparent;
@@ -428,6 +443,9 @@ border-left: 20px solid #fe0065;
     height: 300px;
     margin: auto;
     margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    color: #fff
     border: #000 solid 2px;
     border-radius: 10px;
     background-color: #000000;

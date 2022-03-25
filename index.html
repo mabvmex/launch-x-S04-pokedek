@@ -50,7 +50,9 @@
           <div class="circulitos-rojos"></div>
           <div class="circulitos-rojos"></div>
         </div>
-        <div class="pantalla"></div>
+        <div class="pantalla">
+          <img class="pokemonImagen" src="./img/empty-screen.png" id="pokeIMG" alt="pokemon-imagen">
+        </div>
         <div class="fondo-pantalla">
           <div class="circulo-rojo-dos">
             <div class="brillo-dos"></div>
@@ -65,7 +67,9 @@
         <div class="led-rojo"></div>
         <div class="led-azul"></div>
       </div>
-      <div class="joystick"></div>
+      <div class="joystick">
+        <!-- <button class="" >GO</button> -->
+      </div>
 
       <!-- /* ==== D-PAD ==== */ -->
       <div class="dpad">
@@ -96,7 +100,9 @@
           <i class="fas fa-circle"></i>
           <i class="fas fa-circle"></i>
         </div>
-        <div class="pantalla-input"></div>
+        <!-- <div class="pantalla-input"> -->
+          <input id="pokeBUSQUEDA" class="pantalla-input" type="text" placeholder="Busca un pokemon" onchange="pokeFetch()">
+        <!-- </div> -->
         <div class="led-inferior">
           <div class="brillo-tres"></div>
         </div>
@@ -115,9 +121,11 @@
       <div class="linea-diagonal-derecha"></div>
       <div class="corte-tapa"></div>
       <div class="linea-derecha"></div>
+      
 
       <!-- ==== Pantalla Secundaria ==== -->
-      <div class="pantalla-secundaria"> </div>
+      <!-- <div class="pantalla-secundaria"> </div> -->
+      <input id="pokeINFO" class="pantalla-secundaria" type="text" placeholder="Pokeinfo" onchange="pokeFetch()">
 
 
       <!-- ==== Grid de botones ==== -->
@@ -163,5 +171,5 @@
 
     </div>
 </body>
-
+<script src="./main.js"></script>
 </html>
