@@ -1,5 +1,5 @@
 body {
-  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aab98880-40d5-408c-8dde-073e8abebcdb/d5yluu4-4820e9e3-7fa6-43f0-b780-770891b91fd0.png/v1/fill/w_1024,h_576,q_75,strp/pikachu_w__logo_wallpaper_by_simplewallpapers-d5yluu4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9hYWI5ODg4MC00MGQ1LTQwOGMtOGRkZS0wNzNlOGFiZWJjZGIvZDV5bHV1NC00ODIwZTllMy03ZmE2LTQzZjAtYjc4MC03NzA4OTFiOTFmZDAucG5nIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTU3NiJ9XV19.Swg1xak7phI3d5J35jGT0024634vF335YDxEs0d0Ra8');
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aab98880-40d5-408c-8dde-073e8abebcdb/d5yluu4-4820e9e3-7fa6-43f0-b780-770891b91fd0.png/v1/fill/w_1024,h_576,q_75,strp/pikachu_w__logo_wallpaper_by_simplewallpapers-d5yluu4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9hYWI5ODg4MC00MGQ1LTQwOGMtOGRkZS0wNzNlOGFiZWJjZGIvZDV5bHV1NC00ODIwZTllMy03ZmE2LTQzZjAtYjc4MC03NzA4OTFiOTFmZDAucG5nIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTU3NiJ9XV19.Swg1xak7phI3d5J35jGT0024634vF335YDxEs0d0Ra8");
   /* background-image: url('../img/pokemon-background-1-mini.jpeg'); */
   background-size: 90%;
   background-repeat: no-repeat;
@@ -28,7 +28,8 @@ body {
 /* ======================= */
 /* ==== Zona de Focos ==== */
 
-.foquitos, .leds-derecha {
+.foquitos,
+.leds-derecha {
   display: inline-flex;
 }
 
@@ -67,7 +68,6 @@ body {
   display: inline-flex;
   border-bottom: #000 solid 3px;
   -webkit-box-shadow: 2px 5px 6px -4px #000;
-  
 }
 
 .foquitos-pequeños-rojo {
@@ -110,8 +110,6 @@ body {
   width: 89px;
   border-bottom: #000 solid 3px;
   -webkit-box-shadow: 0px 2px 1px #000;
-  
-
 }
 
 .linea-diagonal {
@@ -164,10 +162,10 @@ body {
 }
 
 .pokemonImagen {
-width: 200px;
-height:200px;
-margin-top: 10px;
-margin-left: 20px;
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .fondo-pantalla {
@@ -334,7 +332,6 @@ margin-left: 20px;
   width: 15px;
   height: 15px;
   background-color: #585858;
-  
 }
 
 .footer {
@@ -357,8 +354,6 @@ margin-left: 20px;
   border-radius: 10px;
   background-color: #98cb98;
 }
-
-
 
 .led-inferior {
   margin-top: 20px;
@@ -384,7 +379,6 @@ margin-left: 20px;
   margin-left: 10px;
 }
 
-
 /* =========
 ================== */
 /* ====  Footer y Botones ==== */
@@ -405,18 +399,19 @@ margin-left: 20px;
 }
 
 .corte-tapa {
-background-color: #fff;
-width: 105px;
-height: 0px;
-margin-top: -25px;
-margin-left: 245px;
-border-top: 40px solid transparent;
-border-right: 20px solid transparent;
-border-bottom: 0px solid transparent;
-border-left: 20px solid #fe0065;
+  background-color: #fff;
+  width: 105px;
+  height: 0px;
+  margin-top: -25px;
+  margin-left: 245px;
+  border-top: 40px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-left: 20px solid #fe0065;
+  
 }
 
-.linea-diagonal-derecha{
+.linea-diagonal-derecha {
   position: absolute;
   width: 45px;
   border-top: 4px solid #000;
@@ -432,23 +427,52 @@ border-left: 20px solid #fe0065;
   width: 107px;
   border-bottom: #000 solid 4px;
   -webkit-box-shadow: 0px 2px 1px #000;
-
 }
-
 
 /* ============================= */
 /* ==== Pantalla Secundaria ==== */
-.pantalla-secundaria {
-    width: 250px;
-    height: 300px;
-    margin: auto;
-    margin-top: 20px;
-    margin-left: 50px;
-    text-align: center;
-    color: #fff
-    border: #000 solid 2px;
-    border-radius: 10px;
-    background-color: #000000;
+.poke-pantalla-secundaria-1 {
+  margin-top: 20px !important;
+  border-top: #fff solid 3px !important;
+  border-right: #fff solid 3px !important;
+  border-left: #fff solid 3px !important;
+  border-bottom: #000 solid 0px !important;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.poke-pantalla-secundaria-2,
+.poke-pantalla-secundaria-3,
+.poke-pantalla-secundaria-4 {
+  border-top: #000 solid 0 !important;
+  border-right: #fff solid 3px !important;
+  border-left: #fff solid 3px !important;
+  border-bottom: #000 solid 0px !important;
+}
+
+.poke-pantalla-secundaria-5 {
+  border-top: #000 solid 0 !important;
+  border-right: #fff solid 3px !important;
+  border-left: #fff solid 3px !important;
+  border-bottom: #000 solid 0px !important;
+}
+
+
+.poke-pantalla-secundaria-1,
+.poke-pantalla-secundaria-2,
+.poke-pantalla-secundaria-3,
+.poke-pantalla-secundaria-4,
+.poke-pantalla-secundaria-5 {
+  width: 250px;
+  height: 30px;
+  margin: auto;
+  margin-top: 0px;
+  margin-left: 50px;
+  text-align: justify;
+  color: #fff;
+  border: 1px solid blue;
+  background-color: #000;
+  font-family: "Press Start 2P";
+  font-size: 10px;
 }
 
 /* ========================= */
@@ -457,7 +481,7 @@ border-left: 20px solid #fe0065;
   display: grid;
   width: 250px;
   margin-top: 10px;
-  margin-left:50px;
+  margin-left: 50px;
   grid-template-columns: auto auto auto auto auto;
   column-gap: 1px;
   row-gap: 1px;
@@ -471,7 +495,7 @@ border-left: 20px solid #fe0065;
   padding-bottom: 20px;
   padding-left: 10px;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 3px 1px #000;  
+  -webkit-box-shadow: 3px 3px 1px #000;
   /* -webkit-box-shadow: -2px -2px 3px -1px inset #000; */
 }
 
@@ -481,22 +505,25 @@ border-left: 20px solid #fe0065;
   margin-top: 15px;
 }
 
-.btn-sec-derecha-uno, .btn-sec-derecha-dos {
+.btn-sec-derecha-uno,
+.btn-sec-derecha-dos {
   width: 50px;
   height: 4px;
   margin-left: 10px;
   border: #000 solid 1px;
   background-color: #585858;
-  -webkit-box-shadow: 2px 2px 1px #000;  
+  -webkit-box-shadow: 2px 2px 1px #000;
 }
 
-.leds-footer-derecha, .footer-derecha-botones {
+.leds-footer-derecha,
+.footer-derecha-botones {
   display: flex;
   margin-top: 5px;
   margin-left: 8px;
 }
 
- .btn-uno, .btn-dos{
+.btn-uno,
+.btn-dos {
   display: flex;
   width: 25px;
   height: 25px;
@@ -504,7 +531,7 @@ border-left: 20px solid #fe0065;
   border: #000 2px solid;
   background-color: #fff;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 3px 1px #000;  
+  -webkit-box-shadow: 3px 3px 1px #000;
 }
 
 .led-amarillo-derecha {
@@ -513,9 +540,8 @@ border-left: 20px solid #fe0065;
   height: 25px;
   width: 25px;
   background-color: #fecb65;
-  border: 3px  #000 solid;
+  border: 3px #000 solid;
 }
-
 
 .brillo-cuatro {
   margin-top: 4px;

@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="/style.css">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/0c93aa4f41.js" crossorigin="anonymous"></script>
+  <!-- Googlw Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet">
   <title>Pokédex</title>
 </head>
 
@@ -51,7 +55,7 @@
           <div class="circulitos-rojos"></div>
         </div>
         <div class="pantalla">
-          <img class="pokemonImagen" src="./img/empty-screen.png" id="pokeIMG" alt="pokemon-imagen">
+          <img class="pokemonImagen" id="pokePantallaPrincipal" src="./img/empty-screen.png" alt="pokemon-imagen">
         </div>
         <div class="fondo-pantalla">
           <div class="circulo-rojo-dos">
@@ -101,7 +105,8 @@
           <i class="fas fa-circle"></i>
         </div>
         <!-- <div class="pantalla-input"> -->
-          <input id="pokeBUSQUEDA" class="pantalla-input" type="text" placeholder="Busca un pokemon" onchange="pokeFetch()">
+        <input id="pokeBusqueda" class="pantalla-input" type="text" autofocus placeholder="Busca un pokemon"
+          onchange="pokeFetch()">
         <!-- </div> -->
         <div class="led-inferior">
           <div class="brillo-tres"></div>
@@ -115,18 +120,21 @@
 
 
 
+    <!-- <label id="pokeInfoSecundaria" type="text" value=""  for="" hight="200px" width="200px"></label> -->
     <!-- ==== Panel Derecho ==== -->
     <div class="pokedex-right">
 
       <div class="linea-diagonal-derecha"></div>
       <div class="corte-tapa"></div>
       <div class="linea-derecha"></div>
-      
+
 
       <!-- ==== Pantalla Secundaria ==== -->
-      <!-- <div class="pantalla-secundaria"> </div> -->
-      <input id="pokeINFO" class="pantalla-secundaria" type="text" placeholder="Pokeinfo" onchange="pokeFetch()">
-
+      <input class="poke-pantalla-secundaria-1" id="poke-pantalla-secundaria-1" type="text" placeholder="  Nombre" readonly>
+      <input class="poke-pantalla-secundaria-2" id="poke-pantalla-secundaria-2" type="text" placeholder="  Tipo" readonly>
+      <input class="poke-pantalla-secundaria-3" id="poke-pantalla-secundaria-3" type="text" placeholder="  stats" readonly>
+      <input class="poke-pantalla-secundaria-4" id="poke-pantalla-secundaria-4" type="text" placeholder="  Pokeinfo" readonly>
+      <input class="poke-pantalla-secundaria-5" id="poke-pantalla-secundaria-5" type="text" placeholder="  Pokeinfo" readonly>
 
       <!-- ==== Grid de botones ==== -->
       <div class="grid-container">
@@ -172,4 +180,5 @@
     </div>
 </body>
 <script src="./main.js"></script>
+
 </html>
