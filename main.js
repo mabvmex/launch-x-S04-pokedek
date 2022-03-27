@@ -16,7 +16,6 @@ const pokeFetch = () => {
     })
 
     .then((data) => {
-      console.log("pokeFetch data: ", data);
       pokemonFoundImage = data.sprites.front_default;
       pokemonFoundName = data.name;
       pokemonFoundType = data.types[0].type.name;
@@ -29,9 +28,8 @@ const pokeFetch = () => {
       pokemonStats(pokemonFoundStats);
       pokemonMoves(pokemonFoundMoves);
     })
-
     .catch((err) => {
-      return console.log(err.message);
+      err.message;
     });
 };
 
@@ -53,26 +51,25 @@ const pokemonType = (pokemonTipo) => {
 };
 
 const pokemonStats = (pokemonEstadisticas) => {
-  // console.log(pokemonEstadisticas);
-
   let dato1, dato2, i;
-  for (i = 0; i <= pokemonEstadisticas.length; i++) {
+
+  for (i = 0; i < pokemonEstadisticas.length; i++) {
     dato1 = pokemonEstadisticas[i].base_stat;
     dato2 = pokemonEstadisticas[i].stat.name;
-    console.log(`${i}.- ${dato1} = ${dato2}`);
+
+    const pokeStats = document.getElementById(`poke-pantalla-secundaria-${i + 4}` );
+    pokeStats.value = `${dato2}: ${dato1}`;
   }
-
-  const pokeStats = document.getElementById("poke-pantalla-secundaria-3");
-  pokeStats.value = `Stats: ${i}.- ${dato1} = ${dato2}`;
 };
 
+const pokemonMoves = (pokemonMovimientos) => {
+  let dato3, j;
 
-const pokemonMoves = (pokemonMoviemientos) => {
-  console.log(pokemonMoviemientos);
-
-  const pokeMoves = document.getElementById("poke-pantalla-secundaria-4");
-  pokeMoves.value = ` Movimientos: ${pokemonMoviemientos}`;
+  for (j = 0; j <= 10; j++) {
+    dato3 = pokemonMovimientos[j].move.name;
+    const pokeMoves = document.getElementById(`poke-pantalla-secundaria-${j + 11}` );
+    pokeMoves.value = `${dato3}`;
+  }
 };
-
 
 //  verificar pokemon no encontrado en pantalla secundaria

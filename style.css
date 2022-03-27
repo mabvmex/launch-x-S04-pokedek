@@ -31,6 +31,7 @@ body {
 .foquitos,
 .leds-derecha {
   display: inline-flex;
+  margin-top: 5px;
 }
 
 .foco-grande-borde {
@@ -348,6 +349,7 @@ body {
   width: 150px;
   height: 45px;
   text-align: center;
+  font-family: "Source Code Pro";
   margin-left: 40px;
   margin-top: -10px !important;
   border: #000 solid 2px;
@@ -408,7 +410,6 @@ body {
   border-right: 20px solid transparent;
   border-bottom: 0px solid transparent;
   border-left: 20px solid #fe0065;
-  
 }
 
 .linea-diagonal-derecha {
@@ -431,55 +432,112 @@ body {
 
 /* ============================= */
 /* ==== Pantalla Secundaria ==== */
-.poke-pantalla-secundaria-1 {
-  margin-top: 20px !important;
+.pantalla-secundaria-1 {
+  width: 296px;
+  height: 30px;
+  margin-left: 30px !important;
+  margin-top: 10px !important;
   border-top: #fff solid 3px !important;
   border-right: #fff solid 3px !important;
+  border-bottom: #000 solid 1px !important;
   border-left: #fff solid 3px !important;
-  border-bottom: #000 solid 0px !important;
   border-radius: 10px 10px 0 0 !important;
 }
 
-.poke-pantalla-secundaria-2,
-.poke-pantalla-secundaria-3,
-.poke-pantalla-secundaria-4 {
-  border-top: #000 solid 0 !important;
-  border-right: #fff solid 3px !important;
-  border-left: #fff solid 3px !important;
-  border-bottom: #000 solid 0px !important;
-}
-
-.poke-pantalla-secundaria-5 {
-  border-top: #000 solid 0 !important;
-  border-right: #fff solid 3px !important;
-  border-left: #fff solid 3px !important;
-  border-bottom: #000 solid 0px !important;
-}
-
-
-.poke-pantalla-secundaria-1,
-.poke-pantalla-secundaria-2,
-.poke-pantalla-secundaria-3,
-.poke-pantalla-secundaria-4,
-.poke-pantalla-secundaria-5 {
-  width: 250px;
+.pantalla-secundaria-2,
+.pantalla-secundaria-3,
+.pantalla-secundaria-10 {
+  width: 296px;
   height: 30px;
-  margin: auto;
-  margin-top: 0px;
-  margin-left: 50px;
-  text-align: justify;
-  color: #fff;
-  border: 1px solid blue;
+  margin-left: 30px !important;
+  border-top: #000 solid 1px !important;
+  border-right: #fff solid 3px !important;
+  border-bottom: #000 solid 1px !important;
+  border-left: #fff solid 3px !important;
+}
+
+.pantalla-secundaria-1,
+.pantalla-secundaria-2,
+.pantalla-secundaria-3,
+.pantalla-secundaria-4,
+.pantalla-secundaria-5,
+.pantalla-secundaria-6,
+.pantalla-secundaria-7,
+.pantalla-secundaria-8,
+.pantalla-secundaria-9,
+.pantalla-secundaria-10,
+.pantalla-secundaria-11,
+.pantalla-secundaria-12,
+.pantalla-secundaria-13,
+.pantalla-secundaria-14,
+.pantalla-secundaria-15,
+.pantalla-secundaria-16,
+.pantalla-secundaria-17,
+.pantalla-secundaria-18 {
+  margin-top: -1px;
   background-color: #000;
-  font-family: "Press Start 2P";
-  font-size: 10px;
+  color: #fff;
+  font-family: "Source Code Pro";
+  font-size: 12px;
+}
+
+.pantalla-secundaria-4,
+.pantalla-secundaria-6,
+.pantalla-secundaria-8,
+.pantalla-secundaria-11,
+.pantalla-secundaria-13,
+.pantalla-secundaria-15,
+.pantalla-secundaria-17 {
+  width: 145px;
+  border-left: #fff solid 3px;
+  margin-left: 30px;
+  border-top: #000 solid 1px;
+  border-right: #000 solid 1px;
+  border-bottom: #000 solid 1px;
+}
+.pantalla-secundaria-5,
+.pantalla-secundaria-7,
+.pantalla-secundaria-9,
+.pantalla-secundaria-12,
+.pantalla-secundaria-14,
+.pantalla-secundaria-16,
+.pantalla-secundaria-18 {
+  width: 145px;
+  text-align: right;
+  margin-left: -14px;
+  border-right: #fff solid 3px;
+  border-top: #000 solid 1px;
+  border-bottom: #000 solid 1px;
+  border-left: #000 solid 1px;
+}
+
+.pantalla-secundaria-17 {
+  border-bottom: #fff solid 3px !important;
+  border-radius: 0 0 0 10px;
+  text-align: left;
+}
+.pantalla-secundaria-18 {
+  border-right: #fff solid 3px !important;
+  border-bottom: #fff solid 3px !important;
+  border-radius: 0 0 10px 0;
+  text-align: right;
+}
+
+.gridContainer-screen {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item-screen {
+  display: grid;
+  height: 30px;
 }
 
 /* ========================= */
 /* ==== Grid de botones ==== */
 .grid-container {
   display: grid;
-  width: 250px;
+  width: 250px !important;
   margin-top: 10px;
   margin-left: 50px;
   grid-template-columns: auto auto auto auto auto;
@@ -518,7 +576,7 @@ body {
 .leds-footer-derecha,
 .footer-derecha-botones {
   display: flex;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-left: 8px;
 }
 
@@ -535,7 +593,7 @@ body {
 }
 
 .led-amarillo-derecha {
-  margin-left: 150px;
+  margin-left: 170px;
   border-radius: 100%;
   height: 25px;
   width: 25px;
