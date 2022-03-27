@@ -7,14 +7,18 @@ const pokeFetch = () => {
   fetch(apiURL)
     .then((response) => {
       if (response.status != 200) {
-        console.log(`pokemon no encontrado: ${pokemon} `);
+        // let notFound = document.getElementById('poke-pantalla-secundaria-1')
+        let notFound = document.getElementsByClassName("notFound");
+        for (let i = 1; i < notFound.length; i++) {
+          notFound[i].value = " ";
+          notFound[0].value = "= pokemon not found =";
+        }
         pokemonImage("./img/meme.png");
         return;
       } else {
         return response.json();
       }
     })
-
     .then((data) => {
       pokemonFoundImage = data.sprites.front_default;
       pokemonFoundName = data.name;
@@ -57,7 +61,9 @@ const pokemonStats = (pokemonEstadisticas) => {
     dato1 = pokemonEstadisticas[i].base_stat;
     dato2 = pokemonEstadisticas[i].stat.name;
 
-    const pokeStats = document.getElementById(`poke-pantalla-secundaria-${i + 4}` );
+    const pokeStats = document.getElementById(
+      `poke-pantalla-secundaria-${i + 4}`
+    );
     pokeStats.value = `${dato2}: ${dato1}`;
   }
 };
@@ -67,9 +73,9 @@ const pokemonMoves = (pokemonMovimientos) => {
 
   for (j = 0; j <= 10; j++) {
     dato3 = pokemonMovimientos[j].move.name;
-    const pokeMoves = document.getElementById(`poke-pantalla-secundaria-${j + 11}` );
+    const pokeMoves = document.getElementById(
+      `poke-pantalla-secundaria-${j + 11}`
+    );
     pokeMoves.value = `${dato3}`;
   }
 };
-
-//  verificar pokemon no encontrado en pantalla secundaria
