@@ -7,12 +7,11 @@ const pokeFetch = () => {
   fetch(apiURL)
     .then((response) => {
       if (response.status != 200) {
-        // let notFound = document.getElementById('poke-pantalla-secundaria-1')
         let notFound = document.getElementsByClassName("notFound");
         for (let i = 1; i < notFound.length; i++) {
           notFound[i].value = " ";
-          notFound[0].value = "= pokemon not found =";
         }
+        notFound[0].value = "= pokemon not found =";
         pokemonImage("./img/meme.png");
         return;
       } else {
